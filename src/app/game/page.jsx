@@ -45,10 +45,10 @@ const generateLocalBoard = () => {
 
       // Crear 2 fichas ganadoras (+20000) y 2 perdedoras (-20000) para esta hilera
       for (let i = 0; i < 2; i++) {
-        rowTiles.push({ value: 20000, revealed: false });  // Cambiado a 20000
+        rowTiles.push({ value: 10000, revealed: false });  // Cambiado a 20000
       }
       for (let i = 0; i < 2; i++) {
-        rowTiles.push({ value: -20000, revealed: false }); // Cambiado a -20000
+        rowTiles.push({ value: -11000, revealed: false }); // Cambiado a -20000
       }
 
       // Mezclarlas
@@ -1246,7 +1246,7 @@ socket.on('passwordChanged', ({ message }) => {
         <div className="game-status-bar">
           <div className="table-info">
             Mesa {currentTableNumber}
-          <div className="table-amount">20.000</div>
+          <div className="table-amount">10.000</div>
           </div>
           <div className={`turn-status ${isYourTurn ? 'your-turn-indicator' : 'wait-turn-indicator'}`}>
             {isYourTurn ? "Tu turno" : "Espere su turno"}
