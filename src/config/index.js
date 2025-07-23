@@ -1,6 +1,6 @@
 const config = {
   socketServerUrl: process.env.NODE_ENV === 'production' 
-    ? ''
+    ? 'https://juegomemoriaservidor4-kw5d.onrender.com'
     : 'http://localhost:5000',
   socketOptions: {
     reconnection: true,
